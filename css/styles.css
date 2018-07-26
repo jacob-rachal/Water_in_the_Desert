@@ -1,0 +1,268 @@
+
+/* GLOBAL STYLES */
+/* Global meaning accross the whole website. */
+h1, h2, h3, h4, h5, h6 {
+  /* color:red; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-top: 10px;
+  /* text-transform: uppercase; */
+}
+/* h1 {
+  color: blue;
+} */
+
+h2 {
+  font-size: 2.2em;
+  /* 16px = 1em */
+  line-height: 1.3em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+/* .merry {
+  font-family: 'Merriweather', serif;
+
+} */
+
+.color-text-white {
+  color: white;
+}
+
+/* Changing the size of the icons */
+.siz {
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* I went with making a new class for the icons rather than reusing fab, since it is kinda scary reusing a fontawesome class. */
+
+.btn-primary {
+  background-color: #6c547d;
+  border: 0;
+}
+.btn-primary:hover {
+  background: #8a69a2;
+}
+/* Changing the hover background color to be different from that of the default. */
+/* Changing Bootstrap's button to be purple-ish and without a border. */
+/* END OF GLOBAL SECTION */
+
+/* HOMEPAGE NAV */
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-default {
+  background: #ffffff;
+  /* #000000 */
+  /* bootstrap style */
+}
+
+.navbar-brand {
+  padding-top: 12px;
+}
+
+.navbar-brand h1 {
+  color:#000000;
+  /* #ffffff */
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  font-size: 26px;
+  transition: color .1s ease-in;
+  /* 3-4 properties: things to change, time, curve */
+  /* all, color */
+  /* time in seconds, having it at .4s makes for a nice effect */
+  /* linear,even, ease-in, ease-out */
+}
+
+.navbar-brand h1:hover {
+  color:#c72c72;
+  /* testing something stupid with the transition here... */
+  /* font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em; */
+}
+
+/* HOMEPAGE JUMBOTRON */
+.jumbotron {
+  margin-bottom: 0px;
+
+}
+
+.home-jumbo {
+  background-color: rgb(36, 151, 163);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* END HOMEPAGE JUMBOTRON */
+
+/* BODY THINGS */
+.dual-row-body {
+  background: #030116;
+  text-align: center;
+  padding-top: 80px;
+}
+.squeezeme {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.dos {
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.dos p {
+  font-size: 0.7em;
+  margin-right: 10%;
+}
+.wawa {
+  color: #99ffcc;
+}
+.doit {
+  color: #990000;
+}
+.primary {
+  background: #337ab7;
+}
+.primary:hover {
+  background: #286090;
+}
+
+.round-n-round {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #EFE655;
+}
+/* END of BODY */
+
+/* CONTACT PAGE things */
+.contact-hero {
+  /*  */
+  background-image: url('../img/contact-bg.jpg');
+  background-attachment: fixed;
+  position: relative;
+  /* mobile doesn't let the above thing fly. */
+  /* background-color: #EFE655; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.overlay-yellow:before {
+
+  display:block;
+  /* content:"hello"; */
+  content:"";
+  position: absolute;
+  /* showes up above/before the background image, need parent to have position: fixed */
+  top: 0px;
+  /* left:20px; */
+  width:100%;
+  height:100%;
+  background: rgba(238, 229, 85, .95);
+}
+
+/* .contact-hero:before {
+    display:block;
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: rgba(238, 229, 85, .95);
+} */
+
+
+
+/* END OF CONTACT PAGE things */
+
+/* THIS IS THE FOOTER SECTION */
+.footer-section {
+  background: #031116;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color:#ffffff;
+  /* center the social when extra small & small screens */
+}
+.footer-social {
+  text-align: center;
+}
+
+
+
+.footer-social a {
+  color: #c72c72;
+}
+.footer-social a:hover {
+  color: #ffffff;
+  /* color when hovered over: white */
+}
+/* END OF FOOTER SECTION */
+
+
+/* Media Queries re: the screen size */
+/* Extra small screen is the default setting  */
+/* Small Screen */
+@media (min-width:768px) {
+  .home-jumbo {
+    /* height: 100vh; */
+    /* vh = view height */
+    /* like saying 100% width, but for height */
+    /* min-height: 800px; */
+    min-height: (100vh - 50px);
+  }
+}
+/* MEDIUM Screen */
+@media (min-width:992px) {
+  .home-jumbo {
+    text-align: left;
+  }
+  .home-jumbotron-left {
+    padding-top: 100px;
+  }
+  .footer-social {
+    text-align: left;
+  }
+
+
+}
+/* Large screen */
+@media (min-width:1200px) {
+
+
+}
+
+
+
+/* .h1 {
+  font-family: 'Oswald', sans-serif;
+  \the nav bar
+} */
+
+/* font-family: 'Montserrat', sans-serif; the headline*/
+
+/* font-family: 'Roboto', sans-serif;   the paragraphs*/
+/* p {
+just some in-class notes
+}
+
+a {
+
+}
+
+.class {
+
+}
+
+#id {
+
+} */
