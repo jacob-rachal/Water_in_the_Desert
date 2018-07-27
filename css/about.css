@@ -1,4 +1,29 @@
 /* FOR Jacob Rachal's project to help Father Modesto's website */
 /* Have stuff specific for the about page here */
 /* (Maybe I should have a css page for each html page?) */
-/* OH! Try to habe a flexbox in here! */
+/* OH! Try to have a flexbox in here! */
+.overlay-2 {
+  top: 100px;
+  left: 10%;
+  right: 10%;
+  position: relative;
+  display: flex;
+  /* position: absolute; */
+  flex-wrap: wrap;
+  align-content: center;
+
+  background-color: #2fa4c3;
+}
+/* .flex-1 { */
+  display: flex;
+  /* position: absolute; */
+  flex-wrap: wrap;
+  align-content: center;
+}
+.mission-1 {
+  display: block;
+  position: absolute;
+}
+.sister {
+  /* nothing yet, but just in case. */
+}

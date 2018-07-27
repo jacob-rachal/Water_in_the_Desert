@@ -75,7 +75,7 @@ p {
   font-family: 'Oswald', sans-serif;
   margin-top: 0;
   font-size: 26px;
-  transition: color .1s ease-in;
+  transition: color .2s ease-in;
   /* 3-4 properties: things to change, time, curve */
   /* all, color */
   /* time in seconds, having it at .4s makes for a nice effect */
@@ -83,7 +83,8 @@ p {
 }
 
 .navbar-brand h1:hover {
-  color:#c72c72;
+  /* color:#c72c72; */
+  color: #1b2c3f;
   /* testing something stupid with the transition here... */
   /* font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -93,11 +94,14 @@ p {
 /* HOMEPAGE JUMBOTRON */
 .jumbotron {
   margin-bottom: 0px;
+  /* color: #39fce9; */
+  /* color: #1b2c3f; */
 
 }
 
 .home-jumbo {
-  background-color: rgb(36, 151, 163);
+  /* background-color: rgb(36, 151, 163); */
+  background-color: rgb(30, 140, 179);
   padding-bottom: 40px;
   padding-top: 40px;
   display: flex;
@@ -140,17 +144,13 @@ p {
   background: #286090;
 }
 
-.round-n-round {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background: #EFE655;
-}
+/* removed carousel container class class. */
 /* END of BODY */
 
 /* CONTACT PAGE things */
 .contact-hero {
   /*  */
-  background-image: url('../img/contact-bg.jpg');
+  background-image: url('../img/F.Modestos_water_car.jpg');
   background-attachment: fixed;
   position: relative;
   /* mobile doesn't let the above thing fly. */
@@ -181,6 +181,12 @@ p {
     background: rgba(238, 229, 85, .95);
 } */
 
+/* Flexbox shenigans for Contact page */
+.cont-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
 /* END OF CONTACT PAGE things */
@@ -200,10 +206,12 @@ p {
 
 
 .footer-social a {
-  color: #c72c72;
+  /* color: #c72c72; */
+  color: #f0ff9f;
+  transition: color .2s ease-in;
 }
 .footer-social a:hover {
-  color: #ffffff;
+  color: #ff876f;
   /* color when hovered over: white */
 }
 /* END OF FOOTER SECTION */
