@@ -58,17 +58,14 @@ p {
   border-radius: 0;
   border: 0;
 }
-
 .navbar-default {
   background: #ffffff;
   /* #000000 */
   /* bootstrap style */
 }
-
 .navbar-brand {
   padding-top: 12px;
 }
-
 .navbar-brand h1 {
   color:#000000;
   /* #ffffff */
@@ -81,14 +78,19 @@ p {
   /* time in seconds, having it at .4s makes for a nice effect */
   /* linear,even, ease-in, ease-out */
 }
-
 .navbar-brand h1:hover {
   /* color:#c72c72; */
-  color: #1b2c3f;
+  color: #1b00ff;
   /* testing something stupid with the transition here... */
   /* font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1em; */
+}
+.clickme {
+  transition: all .4s ease-in;
+}
+.clickme:hover {
+  background-color: rgb(30, 140, 179);
 }
 
 /* HOMEPAGE JUMBOTRON */
@@ -96,25 +98,94 @@ p {
   margin-bottom: 0px;
   /* color: #39fce9; */
   /* color: #1b2c3f; */
-
 }
-
 .home-jumbo {
   /* background-color: rgb(36, 151, 163); */
-  background-color: rgb(30, 140, 179);
+  /* background-color: rgb(30, 140, 179); */
+  /* todo: get a uiGradient that is yellow-red or reddish-brown */
+  background: #c02425; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #c02425, #f0cb35); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #c02425, #f0cb35); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-bottom: 40px;
   padding-top: 40px;
   display: flex;
   align-items: center;
   text-align: center;
 }
-
-
 /* END HOMEPAGE JUMBOTRON */
 
 /* BODY THINGS */
+.four-square {
+  /* background: #fceabb;  */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to top, #fceabb, #f8b500);  */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to top, #fceabb, #f8b500);  */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* margin-left: 60px;
+  margin-right: 60px; */
+  background: #c02425; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #c02425, #f0cb35); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #c02425, #f0cb35); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 11px;
+  padding-right: 11px;
+  display: flex;
+  align-items:center;
+}
+.bow {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.stern {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.brick {
+  padding: 10px 10px 10px 10px;
+  opacity: 0.3;
+  transition: all .4s ease-in;
+}
+.brick p {
+  font-family: 'Modern Antiqua', cursive;
+}
+.brick:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  /* Growing the sections, replace somewhere else */
+  box-shadow: inset 0 0 0 2px #53a7ea;
+  /* gaining an inside border */
+  opacity: 1; /* This fades the font back into view.*/
+}
+
+/* Getting a 3-d shadow */
+.brick-left:hover {
+  /* box-shadow:
+      1px 1px #fceabb,
+      2px 2px #fceabb,
+      3px 3px #fceabb; */
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+.brick-right:hover {
+  /* box-shadow:
+      1px 1px #fceabb,
+      2px 2px #fceabb,
+      3px 3px #fceabb; */
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+
 .dual-row-body {
-  background: #030116;
+  /* background: #030116; */
+  background: #030116; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #030116, #c02425); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #030116, #c02425);
+  /* AHAHAHAHA! That worked! */
   text-align: center;
   padding-top: 80px;
 }
@@ -133,17 +204,44 @@ p {
 }
 .wawa {
   color: #99ffcc;
+  /* animate falling down and becoming more blue. */
+  transition: all .3s ease-in;
+}
+.eek {
+  /* animate tilting to the side. */
+  transition: all .3s ease-in;
 }
 .doit {
-  color: #990000;
+  /* color: #990000; */
+  color: #009900;
+  /* animate movement to the right edge of div.*/
+  transition: all .6s ease-in;
 }
+/* do wawa, eek, and doit hover effects here */
+.wawa:hover {
+  -webkit-transform: translateY(7px);
+  transform: translateY(7px);
+  color: #00afcf;
+}
+.eek:hover {
+  /* do the swing animation? */
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  /* HALELULA IT WORKED! */
+}
+.doit:hover {
+  -webkit-transform: translateX(25px);
+  transform: translateX(25px);
+}
+
 .primary {
   background: #337ab7;
 }
 .primary:hover {
   background: #286090;
 }
-
 /* removed carousel container class class. */
 /* END of BODY */
 
