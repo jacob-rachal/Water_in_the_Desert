@@ -118,77 +118,13 @@ p {
 /* END HOMEPAGE JUMBOTRON */
 
 /* BODY THINGS */
-.four-square {
-  /* background: #fceabb;  */
-  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to top, #fceabb, #f8b500);  */
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to top, #fceabb, #f8b500);  */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* margin-left: 60px;
-  margin-right: 60px; */
+.dual-row-body {
+  /* background: #030116; */
+  /* AHAHAHAHA! That worked! */
   background: #c02425; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #c02425, #f0cb35); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #c02425, #f0cb35); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-bottom: 40px;
-  padding-top: 40px;
-  padding-left: 11px;
-  padding-right: 11px;
-  display: flex;
-  align-items:center;
-}
-.bow {
-  padding-bottom: 10px;
-  padding-top: 30px;
-}
-.stern {
-  padding-bottom: 30px;
-  padding-top: 10px;
-}
 
-.brick {
-  padding: 10px 10px 10px 10px;
-  opacity: 0.3;
-  transition: all .4s ease-in;
-}
-.brick p {
-  font-family: 'Modern Antiqua', cursive;
-}
-.brick:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  /* Growing the sections, replace somewhere else */
-  box-shadow: inset 0 0 0 2px #53a7ea;
-  /* gaining an inside border */
-  opacity: 1; /* This fades the font back into view.*/
-}
-
-/* Getting a 3-d shadow */
-.brick-left:hover {
-  /* box-shadow:
-      1px 1px #fceabb,
-      2px 2px #fceabb,
-      3px 3px #fceabb; */
-  -webkit-transform: translateX(3px);
-  transform: translateX(3px);
-}
-.brick-right:hover {
-  /* box-shadow:
-      1px 1px #fceabb,
-      2px 2px #fceabb,
-      3px 3px #fceabb; */
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px);
-}
-
-
-.dual-row-body {
-  /* background: #030116; */
-  background: #030116; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #030116, #c02425); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #030116, #c02425);
-  /* AHAHAHAHA! That worked! */
   text-align: center;
   padding-top: 80px;
 }
@@ -250,6 +186,84 @@ p {
 .contact-list li:nth-child(even) {
     background:#f3f3f3;
 }
+
+.four-square {
+  /* background: #fceabb;  */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to top, #fceabb, #f8b500);  */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to top, #fceabb, #f8b500);  */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* margin-left: 60px;
+  margin-right: 60px; */
+  background: #030116; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #030116, #c02425); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #030116, #c02425);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 11px;
+  padding-right: 11px;
+  display: flex;
+  align-items:center;
+}
+.bow {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.stern {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.brick {
+  padding: 10px 10px 10px 10px;
+  opacity: 0.3;
+  transition: all .4s ease-in;
+}
+.brick p {
+  font-family: 'Modern Antiqua', cursive;
+}
+.brick:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  /* Growing the sections, replace somewhere else */
+  box-shadow: inset 0 0 0 2px #53a7ea;
+  /* gaining an inside border */
+  opacity: 1; /* This fades the font back into view.*/
+}
+
+/* Getting a 3-d shadow */
+.brick-left:hover {
+  /* box-shadow:
+      1px 1px #fceabb,
+      2px 2px #fceabb,
+      3px 3px #fceabb; */
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+.brick-right:hover {
+  /* box-shadow:
+      1px 1px #fceabb,
+      2px 2px #fceabb,
+      3px 3px #fceabb; */
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+.reabout {
+  background-image: url('../img/F.Modestos_water_car.jpg');
+  background-attachment: fixed;
+  /* fixed to the window */
+  background-size: cover;
+  /* cover expands/shrinks image to cover the sixe of the container */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  /* margin-top: 50px; */
+  /* vh= view height */
+  display: flex;
+  align-items: center;
+}
+
 /* END of BODY */
 
 /* CONTACT PAGE things */
